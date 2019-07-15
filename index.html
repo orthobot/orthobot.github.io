@@ -4,9 +4,13 @@ layout: default
 
 <div class="page clearfix" index>
     <div class="left">
-        <h1>Welcome to xudailong's blog </h1>
+        <!--左侧内容，第一个内容块是简单介绍，第二是博客内容，第三是底部导航栏-->
+        <!--简单介绍-->
+        <h1>Welcome to orthobot's blog </h1>
         <small>这里是我的个人IT学习小天地</small>
         <hr>
+
+        <!--接纳从post来的内容-->
         <ul>
             {% for post in paginator.posts %}
               <li>
@@ -44,9 +48,7 @@ layout: default
             {% endfor %}
         </ul>
 
-
-
-        <!-- Pagination links -->
+        <!-- 底部导航栏 Pagination links -->
         <div class="pagination">
           {% if paginator.previous_page %}
             <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
@@ -65,22 +67,26 @@ layout: default
           {% endif %}
         </div>
     </div>
+
     <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
+
     <div class="right">
+    <!--右侧内容，第一个内容块是最近发表；第二是分类；第三是标签云-->
         <div class="wrap">
+            <!--最近发表 Resent Posts-->
             <div class="side">
                 <div>
                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                     Recent Posts
                 </div>
                 <ul class="content-ul" recent>
-                    {% for post in site.posts offset: 0 limit: 10  %}
+                    {% for post in site.posts offset: 0 limit: 10  %} <!--这里是下面紧接着的内容，从post里面来的-->
                         <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
                     {% endfor %}
                 </ul>
             </div>
 
-            <!-- Content -->
+            <!-- 分类 Categeries -->
             <div class="side ">
                 <div>
                     <i class="fa fa-th-list"></i>
@@ -99,7 +105,8 @@ layout: default
                     {% endfor %}
                 </ul>
             </div>
-            <!-- 其他div框放到这里 -->
+
+            <!-- 标签 Tags -->
             <div class="side">
                 <div>
                     <i class="fa fa-tags"></i>
@@ -144,6 +151,7 @@ layout: default
                 </div>
             </div>
 
+            <!--外部链接-->
             <!-- <div class="side">
                 <div>
                     <i class="fa fa-external-link"></i>
