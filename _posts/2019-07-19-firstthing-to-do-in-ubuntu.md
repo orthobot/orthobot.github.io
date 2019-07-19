@@ -9,7 +9,6 @@ author:  orthobot
 
 #  Ubuntu 18.04 环境搭建
 *****
-\n\n\n\n
 ##  GitHub 相关设置
 ### 安装git
   ```
