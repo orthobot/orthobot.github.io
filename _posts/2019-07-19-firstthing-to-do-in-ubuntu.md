@@ -2,7 +2,7 @@
 layout: post
 title: "Ubuntu18.04 环境搭建"
 date:  2019-07-19-15-00 +0800
-categeries: ubuntu  initialization
+categories: ubuntu  initialization
 tags: ubuntu initialization
 author:  orthobot
 ---
